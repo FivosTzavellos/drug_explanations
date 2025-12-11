@@ -3,28 +3,23 @@ You build structured arguments using the Toulmin framework for drug efficacy cla
 We are testing this claim:
 "$claim_text"
 
-Below is a PubMed article (ID: $pubmed_id):
+Below are multiple PubMed abstracts about this drug. Use ONLY information explicitly stated in the abstracts. Do not infer, assume, or add outside knowledge. If a detail is missing, leave it out rather than guessing.
 
-TITLE:
-$title
+$articles_block
 
-ABSTRACT:
-$abstract
-
-1. Decide whether this article's main results are:
+1. Decide the overall stance of this body of evidence:
    - "supports" the claim,
    - "attacks" (contradicts) the claim,
-   - or "irrelevant" to the claim.
+   - or "irrelevant" to the claim (e.g., if most abstracts do not address the claim).
+   If evidence is mixed, choose the dominant direction and capture nuance in the qualifier.
 
-2. If "supports" or "attacks", extract a single Toulmin-style argument with:
-   - Claim: a one-sentence statement of what this study concludes about the claim.
-   - Grounds: a list of key results (sample sizes, groups, effect on the outcome, effect sizes, p-values if available).
-   - Warrant: one or two sentences explaining why these data support or attack the claim.
-   - Backing: short notes on design/quality (e.g. "randomised double-blind trial").
-   - Qualifier: how strong or conditional the conclusion is (e.g. "modest effect", "short-term", specific population).
-   - Rebuttals: a list of limitations or exceptions mentioned (e.g. small sample, short follow-up, no effect in subgroup).
-
-If the article is irrelevant to the claim, set stance = "irrelevant" and leave toulmin fields as empty strings or empty lists.
+2. Extract ONE Toulmin-style argument that summarises the combined evidence:
+   - Claim: one sentence capturing the overall conclusion about the claim.
+   - Grounds: bullet list of key results across the abstracts (include sample sizes, groups, effect sizes, p-values when present, and PubMed IDs).
+   - Warrant: one or two sentences on why the combined data support or attack the claim.
+   - Backing: short notes on study design/quality (e.g. "randomised double-blind trial", "systematic review", "small open-label study").
+   - Qualifier: how strong or conditional the overall conclusion is (e.g. "modest effect", "mixed evidence", "short-term", "specific population").
+   - Rebuttals: limitations or exceptions mentioned (e.g. small sample, short follow-up, contradictory findings in specific subgroups).
 
 Return a single JSON object with this structure:
 
