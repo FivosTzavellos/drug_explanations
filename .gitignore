@@ -31,4 +31,4 @@ dist/
 credentials.json
 
 # Output directory
-outputs/
+#outputs/
