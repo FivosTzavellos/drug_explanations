@@ -1,43 +1,66 @@
 You build structured arguments using the Toulmin framework for drug efficacy claims.
 
-We are testing this claim:
-"$claim_text"
+You analyse PubMed abstracts to extract simplified Toulmin-style arguments about drug efficacy.
 
-Below is a PubMed article (ID: $pubmed_id):
+Target Claim (Fixed, Ex Ante)
+The following target claim is supplied externally and is the same for all abstracts:
+Target claim: $claim_text
+You must not rewrite, reformulate, or replace this claim.
+Use only the single abstract below; do not infer from or combine with other studies.
 
-TITLE:
-$title
+Input Article
+PubMed ID: $pubmed_id
+Title: $title
+Abstract:$abstract
 
-ABSTRACT:
-$abstract
+Step 1 — Relevance Assessment
+Decide whether the abstract is relevant to the target claim.
+* Relevant: the abstract reports empirical findings on the target drug as the primary intervention and the target outcome in the target population specified in the target claim.
+* Irrelevant: the abstract does not evaluate the target drug as the primary intervention or explicitly excludes the target population specified in the target claim.
+If irrelevant:
+* Set "stance": "irrelevant".
+* Leave all Toulmin fields empty.
 
-1. Decide whether this article's main results are:
-   - "supports" the claim,
-   - "attacks" (contradicts) the claim,
-   - or "irrelevant" to the claim.
+Step 2 — Stance (If Relevant)
+If relevant, determine how the abstract positions itself relative to the target claim:
+* "supports": the results are presented as favouring the target claim.
+* "does_not_support": the results fail to support, weaken, or substantially qualify the target claim.
+Do not infer intent beyond what is explicitly stated.
 
-2. If "supports" or "attacks", extract a single Toulmin-style argument with:
-   - Claim: a one-sentence statement of what this study concludes about the claim.
-   - Grounds: a list of key results (sample sizes, groups, effect on the outcome, effect sizes, p-values if available).
-   - Warrant: one or two sentences explaining why these data support or attack the claim.
-   - Backing: short notes on design/quality (e.g. "randomised double-blind trial").
-   - Qualifier: how strong or conditional the conclusion is (e.g. "modest effect", "short-term", specific population).
-   - Rebuttals: a list of limitations or exceptions mentioned (e.g. small sample, short follow-up, no effect in subgroup).
+Step 3 — Toulmin-Style Extraction (If Relevant)
+Treat the entire abstract as expressing one single argument.
+Extract the following elements.
+Elements
+1. Authorial Conclusion
+A one-sentence statement describing how the authors position their findings with respect to the target claim.
+* Do not restate the target claim verbatim.
+* Do not introduce a new general claim.
 
-If the article is irrelevant to the claim, set stance = "irrelevant" and leave toulmin fields as empty strings or empty lists.
+2. Data
+Key empirical findings explicitly reported in the abstract.
+* Use short factual statements.
+* Include effect direction and magnitude if stated.
 
-Return a single JSON object with this structure:
+3. Warrant
+One sentence explaining why the reported data are taken to support or not support the target claim.
+* If explicitly stated, extract it.
+* If not explicit, reconstruct one standard biomedical warrant and label it as implicit.
 
-{
-  "stance": "supports" | "attacks" | "irrelevant",
-  "toulmin": {
-    "claim": "...",
-    "data": ["...", "..."],
-    "warrant": "...",
-    "backing": ["..."],
-    "qualifier": "...",
-    "rebuttals": ["..."]
-  }
-}
+4. Qualifiers
+Statements limiting the scope, population, duration, or strength of the findings.
+* Multiple qualifiers allowed.
 
-The JSON must be valid and parseable.
+5. Rebuttals
+Explicit limitations, uncertainties, or exceptions mentioned in the abstract.
+* If none are stated, return an empty list.
+
+Output Format (Strict JSON Only)
+Return one valid, parseable JSON object in the following format:
+{"target_claim": "$claim_text","stance": "supports | does_not_support | irrelevant","toulmin": {"authorial_conclusion": "","data": [],"warrant": {"type": "explicit | implicit","content": ""},"qualifiers": [],"rebuttals": []} } 
+
+Constraints
+* Do not introduce information not present in the abstract.
+* Do not create multiple arguments.
+* Do not assess clinical correctness or policy relevance.
+* If an element is not stated, leave it empty.
+* Focus on mapping the structure of scientific argumentation, not on evaluating truth.
