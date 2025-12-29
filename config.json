@@ -6,7 +6,23 @@
     "max_rcts": 5,
     "max_reviews": 2,
     "max_results": 200,
-    "sleep_between_requests": 0.34
+    "sleep_between_requests": 0.34,
+    "manual_pubmed_ids": [
+      "33567185",
+      "33625476",
+      "33755728",
+      "35441470",
+      "39945396",
+      "38958939"
+    ]
+  },
+  "manual_claim": {
+    "claim_id": "semaglutide_manual",
+    "drug": "semaglutide",
+    "condition": "",
+    "outcome": "",
+    "claim_text": "Semaglutide induces significant weight loss in adults with overweight or obesity, but long-term benefit-risk balance depends on continued use and remains under investigation.",
+    "active": true
   },
   "openai": {
     "model": "gpt-4o-mini",
