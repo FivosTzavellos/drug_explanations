@@ -16,7 +16,7 @@ Abstract:$abstract
 Step 1 — Relevance Assessment
 Decide whether the abstract is relevant to the target claim.
 * Relevant: the abstract reports empirical findings on the target drug as the primary intervention and the target outcome in the target population specified in the target claim.
-* Irrelevant: the abstract does not evaluate the target drug as the primary intervention or explicitly excludes the target population specified in the target claim.
+* Irrelevant: the abstract does not evaluate the target drug nor the condition (disease or treatment etc).
 If irrelevant:
 * Set "stance": "irrelevant".
 * Leave all Toulmin fields empty.
