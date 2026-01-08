@@ -21,7 +21,7 @@
     "drug": "semaglutide",
     "condition": "",
     "outcome": "",
-    "claim_text": "Semaglutide induces significant weight loss in adults with overweight or obesity, but long-term benefit-risk balance depends on continued use and remains under investigation.",
+    "claim_text": "Semaglutide induces significant weight loss in adults with obesity.",
     "active": true
   },
   "openai": {
