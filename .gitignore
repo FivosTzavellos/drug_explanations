@@ -32,3 +32,6 @@ credentials.json
 
 # Output directory
 #outputs/
+
+preprocessing_output/
+retrieval_outputs/

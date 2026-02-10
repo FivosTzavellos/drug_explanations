@@ -5,7 +5,7 @@
     "condition": "type 2 diabetes",
     "outcome": "HbA1c",
     "claim_text": "Metformin reduces HbA1c in adults with type 2 diabetes compared with placebo.",
-    "active": true
+    "active": false
   },   
   {
     "claim_id": "atorvastatin_valid",
@@ -13,7 +13,7 @@
     "condition": "hyperlipidaemia",
     "outcome": "LDL cholesterol",
     "claim_text": "Atorvastatin reduces LDL cholesterol levels in adults with hyperlipidaemia.",
-    "active": true
+    "active": false
   },
   {
     "claim_id": "fluoxetine_invalid",
@@ -21,6 +21,6 @@
     "condition": "major depressive disorder",
     "outcome": "time to remission",
     "claim_text": "Fluoxetine rapidly cures depression within 24 to 48 hours.",
-    "active": true
+    "active": false
   }
 ]
