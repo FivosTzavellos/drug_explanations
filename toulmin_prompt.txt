@@ -9,6 +9,7 @@ You must not rewrite, reformulate, or replace this claim.
 
 Input Evidence (multiple abstracts)
 Use ONLY the information explicitly stated in these abstracts. Do not add outside knowledge or infer missing details.
+Each abstract includes a PMID line. Use those PMIDs for all citations.
 $articles_block
 
 Step 1 — Overall Stance
@@ -22,18 +23,23 @@ Step 2 — Toulmin-Style Extraction (Single combined argument)
 Treat the set of abstracts as expressing one overall argument. Extract:
 1. Authorial Conclusion
    One sentence describing the overall conclusion about the target claim based on the combined evidence.
+   Include PMID(s) that support this conclusion.
 2. Data
-   Key empirical findings across the abstracts. Use short factual statements with effect direction/magnitude if stated. Include PubMed IDs for traceability.
+   Key empirical findings across the abstracts. Use short factual statements with effect direction/magnitude if stated.
+   For each data item, include the PMID(s) that support it.
 3. Warrant
    One sentence explaining why the combined data support or do not support the target claim. If not explicit, reconstruct a standard biomedical warrant and label as implicit.
+   Include PMID(s) if the warrant is explicitly stated in the abstracts; otherwise use an empty list.
 4. Qualifiers
    Scope/strength limits (population, duration, magnitude, mixed results).
+   For each qualifier, include the PMID(s) that support it.
 5. Rebuttals
    Limitations, uncertainties, or exceptions mentioned. If none, return [].
+   For each rebuttal, include the PMID(s) that support it.
 
 Output Format (Strict JSON Only)
 Return one valid, parseable JSON object in the following format:
-{"target_claim": "$claim_text","stance": "supports | does_not_support | irrelevant","toulmin": {"authorial_conclusion": "","data": [],"warrant": {"type": "explicit | implicit","content": ""},"qualifiers": [],"rebuttals": []} } 
+{"target_claim": "$claim_text","stance": "supports | does_not_support | irrelevant","toulmin": {"authorial_conclusion": {"text": "", "pubmed_ids": []},"data": [{"text": "", "pubmed_ids": []}],"warrant": {"type": "explicit | implicit","content": "", "pubmed_ids": []},"qualifiers": [{"text": "", "pubmed_ids": []}],"rebuttals": [{"text": "", "pubmed_ids": []}]} } 
 
 Constraints
 * Do not introduce information not present in the abstracts.

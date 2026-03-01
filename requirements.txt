@@ -1,5 +1,7 @@
 openai>=1.0.0
 python-dotenv>=1.0.0
 pymed>=0.5.0
+numpy>=1.20.0
 torch>=2.0.0
 faiss-cpu>=1.7.0
+transformers>=4.0.0
