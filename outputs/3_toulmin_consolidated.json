@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "model": "anthropic/claude-opus-4.6",
+    "num_abstracts": 21,
+    "pmids_included": [
+      "36578889",
+      "33567185",
+      "33755728",
+      "33667417",
+      "36216945",
+      "38679221",
+      "38613667",
+      "38016699",
+      "38629387",
+      "35441470",
+      "38182782",
+      "39042202",
+      "40523410",
+      "38446869",
+      "38265519",
+      "27633186",
+      "38958939",
+      "33441402",
+      "39976940",
+      "40015592",
+      "34170647"
+    ],
+    "target_claim": "Semaglutide induces significant weight loss in adults with obesity",
+    "token_usage": {
+      "estimated_prompt_tokens": 11865,
+      "server_prompt_tokens": 13463,
+      "server_completion_tokens": 4727,
+      "server_total_tokens": 18190
+    }
+  },
+  "toulmin_argument": {
+    "target_claim": "Semaglutide induces significant weight loss in adults with obesity",
+    "data": [
+      {
+        "finding": "In the STEP 1 trial, semaglutide 2.4 mg once weekly produced a mean body weight change of -14.9% vs -2.4% with placebo at 68 weeks (treatment difference -12.4 percentage points; P<0.001), with 86.4% of semaglutide participants achieving ≥5% weight loss vs 31.5% with placebo, and 50.5% achieving ≥15% weight loss vs 4.9% with placebo.",
+        "pmids": [
+          "33567185"
+        ]
+      },
+      {
+        "finding": "In the STEP 2 trial in adults with overweight/obesity and type 2 diabetes, semaglutide 2.4 mg produced a mean body weight change of -9.6% vs -3.4% with placebo at 68 weeks (treatment difference -6.2 percentage points; P<0.0001), with 68.8% achieving ≥5% weight loss.",
+        "pmids": [
+          "33667417"
+        ]
+      },
+      {
+        "finding": "In the STEP 4 withdrawal trial, after a 20-week semaglutide run-in (mean weight loss 10.6%), continued semaglutide produced an additional -7.9% weight change from week 20 to 68 vs +6.9% with switch to placebo (difference -14.8 percentage points; P<0.001).",
+        "pmids": [
+          "33755728"
+        ]
+      },
+      {
+        "finding": "In the STEP 5 trial, semaglutide 2.4 mg achieved -15.2% body weight change vs -2.6% with placebo at 104 weeks, demonstrating sustained efficacy over 2 years.",
+        "pmids": [
+          "36216945"
+        ]
+      },
+      {
+        "finding": "A systematic review and meta-analysis of 4 RCTs (3,613 individuals with obesity without diabetes) found a mean weight reduction of -11.85% favoring semaglutide over placebo (95% CI -12.81 to -10.90).",
+        "pmids": [
+          "36578889"
+        ]
+      },
+      {
+        "finding": "A meta-analysis of 4 RCTs (n=3,087) in patients without diabetes with follow-up ≥68 weeks found semaglutide produced a weighted mean difference of -13.37% in body weight from baseline compared with placebo.",
+        "pmids": [
+          "38679221"
+        ]
+      },
+      {
+        "finding": "An updated meta-analysis of 6 RCTs (3,962 non-diabetic overweight/obese individuals) found semaglutide produced a mean difference of -11.80% body weight (95% CI -12.93 to -10.68; P<0.00001), -12.2 kg absolute weight loss, and -4.5 kg/m² BMI reduction vs placebo.",
+        "pmids": [
+          "38016699"
+        ]
+      },
+      {
+        "finding": "A systematic review of 6 studies (1,541 adults) found semaglutide produced significant weight reductions primarily due to fat mass loss, with the proportion of lean mass relative to total body mass increasing.",
+        "pmids": [
+          "38629387"
+        ]
+      },
+      {
+        "finding": "In a retrospective cohort of postmenopausal women, semaglutide produced 12±8% total body weight loss at 12 months (no hormone therapy) and 16±6% (with hormone therapy).",
+        "pmids": [
+          "38446869"
+        ]
+      },
+      {
+        "finding": "In the STEP 1 extension, mean weight loss at 68 weeks was 17.3% with semaglutide; one year after withdrawal, participants regained two-thirds of lost weight, resulting in a net loss of 5.6% from baseline at week 120.",
+        "pmids": [
+          "35441470"
+        ]
+      },
+      {
+        "finding": "In patients with type 2 diabetes (SUSTAIN-6), semaglutide reduced cardiovascular death, nonfatal MI, or nonfatal stroke (HR 0.74; 95% CI 0.58–0.95; P<0.001 for noninferiority), with weight loss as a concurrent benefit.",
+        "pmids": [
+          "27633186"
+        ]
+      },
+      {
+        "finding": "A network meta-analysis of SGLT-2 inhibitors and GLP-1 receptor agonists found low certainty evidence that GLP-1 receptor agonists might lower body weight in patients with type 2 diabetes.",
+        "pmids": [
+          "33441402"
+        ]
+      }
+    ],
+    "warrant": {
+      "type": "explicit",
+      "content": "Across multiple large randomized controlled trials and meta-analyses, once-weekly subcutaneous semaglutide 2.4 mg consistently produces statistically significant (P<0.001) and clinically meaningful (≥10% from baseline) reductions in body weight vs placebo in adults with overweight or obesity, with or without lifestyle intervention. The magnitude and reproducibility of these effects across diverse populations, trial designs, and durations (68 to 104 weeks) support the conclusion that semaglutide induces significant weight loss. Clinical meaningfulness is further affirmed by the high proportion of participants achieving categorical weight loss thresholds (≥5%, ≥10%, ≥15%) and concurrent improvements in cardiometabolic risk factors and physical functioning.",
+      "pmids": [
+        "33567185",
+        "36578889",
+        "38679221",
+        "38016699",
+        "36216945",
+        "33755728"
+      ]
+    },
+    "backing": [
+      {
+        "evidence": "Three independent systematic reviews and meta-analyses of randomized controlled trials consistently confirm approximately 11–13% greater weight reduction with semaglutide 2.4 mg versus placebo in non-diabetic adults with obesity, reinforcing the robustness of individual trial findings.",
+        "pmids": [
+          "36578889",
+          "38679221",
+          "38016699"
+        ]
+      },
+      {
+        "evidence": "The STEP 5 trial demonstrated sustained weight loss of -15.2% over 2 years, and the STEP 4 trial demonstrated continued weight loss with maintained treatment and weight regain upon withdrawal, confirming the pharmacological mechanism is responsible for the sustained weight reduction effect.",
+        "pmids": [
+          "36216945",
+          "33755728"
+        ]
+      },
+      {
+        "evidence": "Body composition analysis shows weight loss with semaglutide is primarily driven by fat mass reduction, and the proportion of lean mass relative to total body mass may increase, supporting a favorable body composition change.",
+        "pmids": [
+          "38629387"
+        ]
+      },
+      {
+        "evidence": "Improvements in cardiometabolic risk factors (waist circumference, systolic blood pressure, physical functioning) accompany weight loss with semaglutide, providing additional clinical validation of the weight loss effect.",
+        "pmids": [
+          "33567185",
+          "33755728",
+          "38446869"
+        ]
+      },
+      {
+        "evidence": "Semaglutide demonstrated cardiovascular safety and reduced major adverse cardiovascular events in patients with type 2 diabetes at high cardiovascular risk (HR 0.74; 95% CI 0.58–0.95), supporting the overall benefit-risk profile of the drug.",
+        "pmids": [
+          "27633186"
+        ]
+      }
+    ],
+    "qualifiers": [
+      {
+        "qualifier": "Weight loss magnitude is attenuated in adults with type 2 diabetes (-9.6% with semaglutide 2.4 mg) compared to those without diabetes (-14.9%), suggesting the presence of diabetes modifies the treatment effect.",
+        "pmids": [
+          "33667417",
+          "33567185"
+        ]
+      },
+      {
+        "qualifier": "Weight loss is not maintained after treatment discontinuation; participants regained approximately two-thirds of their prior weight loss within one year of stopping semaglutide, confirming the chronicity of obesity and need for ongoing treatment.",
+        "pmids": [
+          "35441470",
+          "33755728"
+        ]
+      },
+      {
+        "qualifier": "Gastrointestinal adverse events (nausea, diarrhea, vomiting) are more frequent with semaglutide than placebo and led to treatment discontinuation in 4.5% of semaglutide participants in STEP 1, potentially limiting tolerability in some patients.",
+        "pmids": [
+          "33567185",
+          "36578889",
+          "33667417",
+          "38016699"
+        ]
+      },
+      {
+        "qualifier": "Study populations were predominantly female and White, and most trials lasted 68 weeks (with only one extending to 104 weeks), limiting long-term and diversity generalizability.",
+        "pmids": [
+          "36216945",
+          "33567185",
+          "36578889"
+        ]
+      },
+      {
+        "qualifier": "In postmenopausal women, weight loss response to semaglutide may be modulated by concurrent hormone therapy use, with HT users achieving greater weight loss (16% vs 12% at 12 months), suggesting hormonal status may modulate efficacy.",
+        "pmids": [
+          "38446869"
+        ]
+      },
+      {
+        "qualifier": "Tirzepatide, a dual GIP/GLP-1 receptor agonist, demonstrated greater weight reductions than semaglutide 1.0 mg in head-to-head comparison (additional -1.9 to -5.5 kg; P<0.001) and in network meta-analyses, indicating semaglutide may not be the most efficacious option in its drug class.",
+        "pmids": [
+          "34170647",
+          "38613667"
+        ]
+      },
+      {
+        "qualifier": "The meta-analytic evidence from the broader GLP-1 RA class for body weight lowering in type 2 diabetes was rated as low certainty by GRADE assessment, though individual semaglutide trials for obesity showed high certainty results.",
+        "pmids": [
+          "33441402"
+        ]
+      },
+      {
+        "qualifier": "Notable reductions in lean mass (ranging from ~0% to 40% of total weight lost) were observed in some studies, raising concerns about the quality of weight loss especially in larger trials.",
+        "pmids": [
+          "38629387"
+        ]
+      }
+    ],
+    "rebuttals": [
+      {
+        "rebuttal": "Two-thirds of weight lost during semaglutide treatment was regained within one year of treatment withdrawal, and cardiometabolic improvements reverted toward baseline, suggesting the weight loss effect is not durable without continued pharmacotherapy.",
+        "pmids": [
+          "35441470"
+        ]
+      },
+      {
+        "rebuttal": "A pharmacovigilance analysis of the FAERS database identified significant disproportionality signals for depression (ROR 1.87; 95% CI 1.60–2.20) and suicide/self-injury (ROR 1.73; 95% CI 1.46–2.04) specifically with semaglutide in the weight management indication, raising psychiatric safety concerns.",
+        "pmids": [
+          "40523410"
+        ]
+      },
+      {
+        "rebuttal": "EudraVigilance analysis identified 372 psychiatric adverse event reports (1.2% of total) for GLP-1 receptor agonists, including depression, anxiety, and suicidal ideation, with 9 fatal outcomes (1 with semaglutide) from completed suicidal attempts, warranting further investigation.",
+        "pmids": [
+          "38265519"
+        ]
+      },
+      {
+        "rebuttal": "A retrospective matched cohort study from a single academic institution found semaglutide was associated with a higher risk of nonarteritic anterior ischemic optic neuropathy (NAION) in both overweight/obese patients (HR 7.64; 95% CI 2.21–26.36) and type 2 diabetes patients (HR 4.28; 95% CI 1.62–11.29).",
+        "pmids": [
+          "38958939"
+        ]
+      },
+      {
+        "rebuttal": "However, a large multi-database study (37.1 million T2D patients, 810,390 semaglutide users) found only a modest association with NAION (SCCS meta-analysis IRR 1.32; 95% CI 1.14–1.54), substantially smaller than previously reported, and a separate large retrospective cohort study (TriNetX, ~120,000 semaglutide users) found no significant increase in NAION risk (RR 0.7; 95% CI 0.523–0.937 in T2D), suggesting the NAION risk may be confounded or much smaller than initially indicated.",
+        "pmids": [
+          "39976940",
+          "40015592"
+        ]
+      },
+      {
+        "rebuttal": "A real-world retrospective cohort study of 240,618 patients with overweight or obesity found semaglutide was associated with lower risk of both incident (HR 0.27; 95% CI 0.20–0.36) and recurrent (HR 0.44; 95% CI 0.32–0.60) suicidal ideation compared to non-GLP-1RA anti-obesity medications, contradicting the pharmacovigilance safety signals.",
+        "pmids": [
+          "38182782"
+        ]
+      },
+      {
+        "rebuttal": "Semaglutide is associated with higher rates of gastrointestinal adverse events, treatment discontinuation, and serious adverse events compared to placebo, with the risk of GI adverse events, treatment discontinuation, and serious adverse events all significantly elevated in meta-analysis.",
+        "pmids": [
+          "36578889",
+          "33567185",
+          "33667417"
+        ]
+      },
+      {
+        "rebuttal": "Tirzepatide produced significantly greater weight reductions than semaglutide 1.0 mg in a head-to-head trial and in network meta-analysis, suggesting semaglutide may not represent the optimal pharmacological intervention for weight loss within the incretin-based drug class.",
+        "pmids": [
+          "34170647",
+          "38613667"
+        ]
+      }
+    ]
+  }
+}
